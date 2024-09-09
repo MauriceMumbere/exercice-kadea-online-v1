@@ -1,0 +1,207 @@
+@import url("../style/fonts.css");
+
+:root{
+    --beige:#FAF3E9;
+    --red:rgb(217, 41, 80);
+    --white:#FFFFFF;
+    --black:#282C34;
+    --black-clair:#3E3D3D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+/*****************************\
+    Utilities class
+\*****************************/
+.h1{
+    font-size: 2rem;
+}
+.h2{
+    font-size: 1.5rem;
+}
+.h3{
+    font-size: 1rem;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.align-center{
+    align-items: center;
+}
+.border{
+    border:1px solid  var(--black);
+}
+.border-radius{
+    border-radius: 0.5rem;
+}
+.container{
+    padding: 5rem 8rem;
+}
+.width-100{
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tex-center{
+    text-align: center;
+}
+.gap-4{
+    gap: 4rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.bg-beige{
+    background-color: var(--beige);
+}
+.p-t-b-m{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.p-t-b-l{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.p-b{
+    padding-bottom: 1.5rem;
+}
+.label{
+  padding-bottom: 0.7rem;
+}
+.p-t{
+    padding-top: 4rem;
+}
+/*****************************\
+    Header styles
+\*****************************/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8rem;
+}
+.header__nav ul{
+    display: flex;
+    list-style: none;
+}
+.header__nav li{
+    margin-left: 15px;
+}
+.header__nav a{
+    text-decoration: none;
+    color: black;
+}
+.header__nav a:hover{
+    color: var(--red);
+}
+.btn{
+    color: var(--white);
+    background-color: var(--red );
+    padding: 1rem 2rem;
+    border: 2px var(--red) solid;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--red);
+}
+
+.option__article{
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    flex: 1;
+}
+.option__article__h3{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.code{
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.apprentissage{
+    padding: 5rem 8rem;
+}
+.apprentissage__h2{
+    text-align: center;
+}
+.apprentissage__cars{
+    display: flex;
+    gap: 7rem;
+}
+.apprentissage__cars__article{
+    background-color: var(--beige);
+    padding: 2rem;
+    margin: 6rem 0;
+    border-radius: 0.5rem;
+}
+.apprentissage__a{
+    text-decoration: none;
+    color: var(--red);
+}
+
+.forrm_input, .form__text-area{
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+.form__text-area{
+    resize: none;
+    height: 100px;
+}
+.btn-div{
+    text-align: right;
+    margin-top: 2rem;
+}
+/*****************************\
+    Footer styles
+\*****************************/
+.footer{
+    text-align: center;
+    padding: 3rem 0;
+}
+.footer__p{
+    padding: 0.7rem 0;
+    font-size: 16px;
+}
+.footer__link{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.block{
+  display: block;
+}
+.none{
+  display: none;
+}
+@media screen and (max-width:768px) {
+  .none-m{
+    display: none;
+  }
+  .block-m{
+    display: block;
+  }
+  .flex-justify-column{
+    flex-direction: column;
+  }
+  .align-center{
+    text-align: center;
+  }
+  .grid-m{
+    grid-template-columns: 1fr;
+  }
+}
